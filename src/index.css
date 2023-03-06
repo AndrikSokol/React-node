@@ -1,4 +1,10 @@
 body {
+  /* display:flex;
+  flex-direction: column;
+  width:auto;
+  justify-content: center; */
+  background-image: url('./assets/hardwood-g74db60237_1920.jpg');
+  background-color: rgb(255, 255, 255);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +17,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* @media screen and (min-width: 850px){
+   body{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+} */

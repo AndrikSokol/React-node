@@ -1,0 +1,13 @@
+.MyButton{
+    background-color: pink;
+    border: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: opacity,transform ease-in-out 0.2s;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 0.8;
+      transform: scale(1.02);
+    }
+  }
