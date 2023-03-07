@@ -7,7 +7,7 @@ const PostItem = ({post,removePost,number}) =>{
     return (
         <div className={style.PostItem}>
           <div>
-            <h3>{number}. {post.title}</h3>
+            <h3>{post.id}. {post.title}</h3>
             <p>{post.text}</p>
           </div>
           <div>

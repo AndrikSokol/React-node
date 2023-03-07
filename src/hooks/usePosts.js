@@ -10,7 +10,6 @@ export const useSortedPosts = (posts,sort)=>{
 
       return sortedPosts;
 }
-
 export const usePosts =(posts,sort,query) =>{
     const sortedPosts = useSortedPosts(posts,sort);
     const sortedAndSearchedPosts = React.useMemo(()=>{
@@ -19,3 +18,5 @@ export const usePosts =(posts,sort,query) =>{
 
       return sortedAndSearchedPosts;
 }
+
+
