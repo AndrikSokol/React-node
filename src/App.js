@@ -24,6 +24,7 @@ const App = () => {
   const[totalPages,setTotalPages] = React.useState(0)
   const[page,setPage] = React.useState(1)
   const[limit,setLimit] = React.useState(10)
+
   const[fetchPosts,isPostsLoading,postError]  = useFetching(async ()=>{
     const response = await PostService.getAll(page,limit);
     setPosts(response.data)
@@ -75,15 +76,17 @@ const App = () => {
         <h1>Ошибка загрузки ${postError}</h1>
       }
       {isPostsLoading
-        ?<div style={{display:'flex',justifyContent: 'center'}}><Loader/></div>
-        : (
-          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage}/>,
-          <PostList posts = {sortedAndSearchedPosts} title = 'Посты' removePost = {removePost}/>,
-          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage}/>
+        ? (
+          <div style={{display:'flex',justifyContent: 'center'}}><Loader/></div>
         )
-      
+        : (
+          <>
+          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>,
+          <PostList posts = {sortedAndSearchedPosts} title = 'Посты' removePost = {removePost}/>,
+          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>
+          </>
+         ) 
       }
-     
       </div>
     </>
   );

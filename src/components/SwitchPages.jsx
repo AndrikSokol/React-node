@@ -1,12 +1,17 @@
 import React from 'react'
 import MyButton from './UI/button/MyButton'
 
-const SwitchPages = ({totalPages,pagesArray,changePage}) => {
+const SwitchPages = ({totalPages,pagesArray,changePage,page}) => {
+  
   return (
     <div style ={{display:'flex',justifyContent:'center'}}>
         {totalPages &&
             pagesArray.map((p) =>{
-            return(<MyButton key ={p} onClick ={()=>changePage(p)} style= {{marginRight:'10px'}}>{p}</MyButton>)
+            const st = {marginRight: '10px'} 
+            if(p == page)
+              st.borderLeft= '2px solid black'
+            console.log(st);
+            return(<MyButton key ={p} onClick ={()=>changePage(p)} style={st}>{p}</MyButton>)
           })
         }
     </div>
