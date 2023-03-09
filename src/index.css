@@ -4,7 +4,7 @@ body {
   width:auto;
   justify-content: center; */
   background-image: url('./assets/hardwood-g74db60237_1920.jpg');
-  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(2px);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
