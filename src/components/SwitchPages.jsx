@@ -10,7 +10,6 @@ const SwitchPages = ({totalPages,pagesArray,changePage,page}) => {
             const st = {marginRight: '10px'} 
             if(p == page)
               st.borderLeft= '2px solid black'
-            console.log(st);
             return(<MyButton key ={p} onClick ={()=>changePage(p)} style={st}>{p}</MyButton>)
           })
         }

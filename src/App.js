@@ -1,20 +1,20 @@
-import { BrowserRouter, Link, Route,Routes } from 'react-router-dom';
+import { Route,Routes, useNavigate } from 'react-router-dom';
 import './App.scss';
 import About from './pages/About';
 import Posts from './pages/Posts'
 import Error from './pages/Error'
-
+import Navbar from './components/UI/Navbar/Navbar';
+import PostIdPage from './pages/PostIdPage';
 const App = () => {
+
 
   return (
     <div className='App'>
-      <header>
-        <Link to ='/about'>О Сайте</Link>
-        <Link to='/posts'>Посты</Link>
-      </header> 
+      <Navbar/>
       <Routes>
         <Route path="about" element={ <About/>}/>
         <Route path="posts" element={ <Posts/>}/>
+        <Route path= "posts/:id" element ={<PostIdPage/>}/>
         <Route path="*" element={ <Error/>}/>
       </Routes>
     </div>

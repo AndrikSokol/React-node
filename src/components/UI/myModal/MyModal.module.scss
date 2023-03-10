@@ -12,11 +12,13 @@
     padding: 25px;
     background: white;
     border-radius: 16px;
-    min-width: 250px;
+    min-width: 400px;
+    max-height: 200px;
 }
 
 .myModal.active{
+    padding-top: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 }

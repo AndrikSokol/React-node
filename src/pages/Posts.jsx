@@ -76,11 +76,11 @@ const Posts = () => {
           <div style={{display:'flex',justifyContent: 'center'}}><Loader/></div>
         )
         : (
-          <>
-          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>,
-          <PostList posts = {sortedAndSearchedPosts} title = 'Посты' removePost = {removePost}/>,
-          <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>
-          </>
+          <div >
+            <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>,
+            <PostList posts = {sortedAndSearchedPosts} title = 'Посты' removePost = {removePost}/>,
+            <SwitchPages totalPages={totalPages} pagesArray ={pagesArray} changePage ={changePage} page = {page}/>
+          </div>
          ) 
       }
       </div>
