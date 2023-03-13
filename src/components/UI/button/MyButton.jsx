@@ -1,12 +1,12 @@
-import React from 'react'
-import style from './MyButton.module.scss'
+import React from "react";
+import style from "./MyButton.module.scss";
 
-const MyButton = ({children, ...props})=> {
+const MyButton = ({ children, ...props }) => {
   return (
-    <button {...props} className={style['MyButton']}>
-       {children}
-    </button> 
-  )
-}
+    <button {...props} className={style["MyButton"]}>
+      {children}
+    </button>
+  );
+};
 
-export default MyButton
+export default MyButton;

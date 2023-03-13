@@ -1,17 +1,13 @@
+@media screen and (min-width: 850px) {
+  .App {
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
-
-@media screen and (min-width: 850px){
-    .App{
-        width: 790px;
-        margin-left: auto;
-        margin-right: auto;
-    
-    }
-    }
-      
-    @media screen and (max-width: 450px){
-    .App{
-        width: 390px;
-    }
-    }
-
+@media screen and (max-width: 450px) {
+  .App {
+    width: 390px;
+  }
+}

@@ -1,14 +1,12 @@
-import React from 'react'
-import style from './MyInput.module.scss'
+import React from "react";
+import style from "./MyInput.module.scss";
 
-const MyInput = ({children,...props}) => {
+const MyInput = ({ children, ...props }) => {
   return (
     <input {...props} className={style}>
-        {children}
+      {children}
     </input>
-  )
-}
+  );
+};
 
-
-
-export default MyInput
+export default MyInput;

@@ -1,15 +1,15 @@
-select{
-    margin-top: 10px;
-    outline: none;
-    border-radius: 5px;
-    border:none;
-    box-shadow: 1px 1px 5px rgb(236, 226, 226);
-    padding: 3px;
-    background-color: antiquewhite;
-    transition: transform  ease-out 0.1s;
+select {
+  margin-top: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(236, 226, 226);
+  padding: 3px;
+  background-color: antiquewhite;
+  transition: transform ease-out 0.1s;
 
-    &:hover{
-        cursor: pointer;
-        transform:scale(1.01);
-    }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
 }
