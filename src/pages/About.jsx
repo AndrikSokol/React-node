@@ -1,8 +1,10 @@
 import React from 'react'
-
+import style from './About.module.scss'
 const About = () => {
   return (
-    <div>About</div>
+    <div className={style.About}>
+      <h1>Тут должна быть информация о сайте</h1> 
+    </div>
   )
 }
 

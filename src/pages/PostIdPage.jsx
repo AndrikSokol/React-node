@@ -32,7 +32,7 @@ const PostIdPage = () => {
         <h1>Ошибка загрузки ${postError}</h1>
       }
       {isPostLoading 
-      ? <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}><Loader/></div>
+      ? <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}><Loader/></div>
       : <div className={style.PostItem}>
           <div>
             <h2>{post.id}. {post.title}</h2>
@@ -44,18 +44,20 @@ const PostIdPage = () => {
         <h1>Ошибка загрузки ${comError}</h1>
       }
       {isComLoading 
-      ?<div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}><Loader/></div>
-      :<div className = {style.Comments}>
-            <h3>Комментарии</h3>
-            {comments.map((com)=>{
+      ?<div style={{display:'flex',alignItems:'center',justifyContent:'center'}}><Loader/></div>
+      :<>
+        <h2 style={{display:'flex',alignItems:'center',justifyContent:'center',borderBottom:'1px solid white',paddingBottom:'5px'}}>Комментарии</h2>
+        <div className = {style.Comments}>
+        {comments.map((com,index)=>{
               return(
               <div key= {com.id}>
-                <h3>{com.name} Email: {com.email}</h3>
+                <h3>{index+1}. {com.name} | Email: {com.email}</h3>
                 <p>{com.body}</p>
               </div>
               )
             })}
         </div>
+        </>
       }
     </div>
   );

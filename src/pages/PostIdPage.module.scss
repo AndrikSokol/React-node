@@ -1,6 +1,10 @@
 .PostIdPage{
     background-color: rgba(255, 228, 196, 0.873);
-    
+    // display:flex;
+    // flex-direction: column;
+    animation: node 1s ease-in-out infinite;
+    animation-iteration-count: 1;
+    border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -11,9 +15,6 @@
     border-radius: 0px 0px 5px 5px;
     margin-bottom: 10px;
     overflow-wrap: break-word;
-    animation: node 1s ease-in-out infinite;
-    animation-iteration-count: 1;
-
     p,h3,h2{
         padding: 0;
         margin: 0;
@@ -24,4 +25,9 @@
     0% {opacity: 0;}
     50% {opacity: 0.3;}
     100%{opacity:1}
+}
+
+.Comments{
+    padding: 0px 10px 5px 10px;
+
 }
