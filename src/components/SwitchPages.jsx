@@ -6,8 +6,10 @@ const SwitchPages = ({ totalPages, pagesArray, changePage, page }) => {
     <div style={{ display: "flex", justifyContent: "center" }}>
       {totalPages &&
         pagesArray.map((p) => {
-          const st = { marginRight: "10px" };
-          if (p == page) st.borderLeft = "2px solid black";
+          const st = {};
+          if (p == page) {
+            st.borderLeft = "2px solid black";
+          }
           return (
             <MyButton key={p} onClick={() => changePage(p)} style={st}>
               {p}

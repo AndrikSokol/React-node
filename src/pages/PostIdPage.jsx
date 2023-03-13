@@ -41,9 +41,7 @@ const PostIdPage = () => {
       ) : (
         <div className={style.PostItem}>
           <div>
-            <h2>
-              {post.id}. {post.title}
-            </h2>
+            <h2>{post.title}</h2>
             <p>{post.body}</p>
           </div>
         </div>

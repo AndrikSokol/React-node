@@ -9,11 +9,11 @@
 }
 
 .myModalContent {
+  position: fixed;
   padding: 25px;
   background-color: rgba(255, 228, 196);
   border-radius: 16px;
   min-width: 400px;
-  max-height: 200px;
 }
 
 .myModal.active {

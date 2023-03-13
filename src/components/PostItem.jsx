@@ -16,17 +16,19 @@ const PostItem = ({ post, removePost, number }) => {
           alt="Красная канцелярская кнопка"
         ></img>
         <h3>
-          {post.id}. {post.title}
+          {number}. {post.title}
         </h3>
         <p>{post.body}</p>
       </div>
-      <div style={{ marginRight: "10px", marginLeft: "5px" }}>
-        <MyButton onClick={() => navigate(`/posts/${post.id}`)}>
-          Открыть
-        </MyButton>
-      </div>
       <div>
-        <MyButton onClick={() => removePost(post)}>Удалить</MyButton>
+        <div>
+          <MyButton onClick={() => navigate(`/posts/${post.id}`)}>
+            Открыть
+          </MyButton>
+        </div>
+        <div>
+          <MyButton onClick={() => removePost(post)}>Удалить</MyButton>
+        </div>
       </div>
     </div>
   );
